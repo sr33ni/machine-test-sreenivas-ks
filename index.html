@@ -1,12 +1,14 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <a href="#main-menu" class="skip-link">Skip to main menu</a>
+    <a href="#skip" class="skip-link">Skip to main menu</a>
     <header class="header flex-box between">
         <a href="/" class="logo flex-box">
             <img src="./images/coop_bank_icon_clean.png" alt="Coop Bank logo">
@@ -18,7 +20,7 @@
         <div class="menu ">
             <span class="burger"></span>
         </div>
-        <aside class="useraccess">
+        <aside class="useraccess box-inter">
             <div class="register-area flex-box between">
                 <a href="#" class="arrow-style-btn">
                     Register Here
@@ -51,8 +53,8 @@
     </header>
     <main>
         <section class="section section-one full-width">
-            <nav class="main-nav">
-                <ul class="flex-box nav-ul between">
+            <nav class="main-nav flex-box">
+                <ul class="flex-box nav-ul start">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -111,8 +113,16 @@
                         <a href="#">Contact Us</a>
                     </li>
                 </ul>
+                <ul class="search-ul">
+                    <li class="flex-box nowrap end">
+                        <input type="search" name="mainsearch" id="" class="search-box">
+                        <label for="mainsearch" class=""></label>
+                        <a href="#" class="search-icon"></a>
+
+                    </li>
+                </ul>
             </nav>
-            <div class="sub-section flex-box between" aria-labelledby="article-and-form">
+            <div id="skip" class="sub-section flex-box between" aria-labelledby="article-and-form">
                 <article class="flex-box between flex-70">
                     <nav class="breadcrumb flex-box start" aria-label="Breadcrumb">
                         <a href="#" class="arrow-style-btn ">
@@ -128,17 +138,19 @@
                                 Check Coopbank included multiple features
                             </p>
                             <div class="hero-actions flex-box">
-                                <a href="#" class="btn btn-yellow">
+                                <a href="#" class="btn btn-yellow flex-box nowrap">
+                                    <span class="icon icon-scolar"></span>
                                     View more
                                 </a>
-                                <a href="#" class="btn btn-yellow">
+                                <a href="#" class="btn btn-yellow flex-box nowrap">
+                                    <span class="icon icon-heart"></span>
                                     View more
                                 </a>
                             </div>
                         </div>
                     </div>
                 </article>
-                <aside class="credit-widget flex-box column alg-start flex-30">
+                <aside class="credit-widget flex-box column alg-start flex-30 box-inter">
                     <header class="widget-header">
                         <span class="tag active">Simulator</span>
                         <span class="tag">Contact Us</span>
@@ -178,33 +190,47 @@
             </div>
             <div class="sub-section-grid flex-box between alg-start" aria-labelledby="grid-section">
                 <section aria-labelledby="services-heading" class="flex-70">
-                    <ul class="grid-ul">
-                        <li class="flex-box">
-                            <article class="grid-item-card">
+                    <ul class="grid-ul box-inter">
+                        <li class="flex-box start alg-start">
+                            <article class="grid-item-card flex-box alg-start column">
                                 <h3>Loan Request</h3>
                                 <p>Helping to fulfill your dreams.</p>
-                                <a href="#" aria-label="View more about loan requests">View more</a>
+                                <a href="#" aria-label="View more about loan requests" class="flex-box"> <span class="icon icon-arrow"> </span>View more</a>
                             </article>
                         </li>
-                        <li class="flex-box">
-                            <article class="grid-item-card">
-                                <h3>Loan Request</h3>
-                                <p>Helping to fulfill your dreams.</p>
-                                <a href="#" aria-label="View more about loan requests">View more</a>
+                        <li class="flex-box start alg-start">
+                            <article class="grid-item-card flex-box alg-start column">
+                                <h3>I want to save or invest</h3>
+                                <p>Advise your decisions</p>
+                                <a href="#" aria-label="View more about loan requests" class="flex-box"> <span class="icon icon-arrow"> </span>View more</a>
                             </article>
                         </li>
-                        <li class="flex-box">
-                            <article class="grid-item-card">
-                                <h3>Loan Request</h3>
-                                <p>Helping to fulfill your dreams.</p>
-                                <a href="#" aria-label="View more about loan requests">View more</a>
+                        <li class="flex-box start alg-start">
+                            <article class="grid-item-card flex-box column alg-start">
+                                <h3>Request items online</h3>
+                                <p>We offer you tools</p>
+                                <a href="#" aria-label="View more about loan requests" class="flex-box"> <span class="icon icon-arrow"> </span>View more</a>
                             </article>
                         </li>
-                        <li class="flex-box">
-                            <article class="grid-item-card">
-                                <h3>Loan Request</h3>
-                                <p>Helping to fulfill your dreams.</p>
-                                <a href="#" aria-label="View more about loan requests">View more</a>
+                        <li class="flex-box start alg-start">
+                            <article class="grid-item-card flex-box column alg-start">
+                                <h3>Online Transactions</h3>
+                                <p>Secure Information</p>
+                                <a href="#" aria-label="View more about loan requests" class="flex-box"> <span class="icon icon-arrow"> </span>View more</a>
+                            </article>
+                        </li>
+                        <li class="flex-box start alg-start">
+                            <article class="grid-item-card flex-box column alg-start">
+                                <h3>Fees and charges</h3>
+                                <p>We offer the lowest rates.</p>
+                                <a href="#" aria-label="View more about loan requests" class="flex-box"> <span class="icon icon-arrow"> </span>View more</a>
+                            </article>
+                        </li>
+                        <li class="flex-box start alg-start">
+                            <article class="grid-item-card flex-box column alg-start">
+                                <h3>Financial Services</h3>
+                                <p>Best Credits.</p>
+                                <a href="#" aria-label="View more about loan requests" class="flex-box"> <span class="icon icon-arrow"> </span>View more</a>
                             </article>
                         </li>
                     </ul>
@@ -213,28 +239,34 @@
                     <section>
                         <h2 class="sub-grid-title">Interesting Links</h2>
                         <div aria-labelledby="sub grid list" class="sub-grid">
-                            <ul class="grid-ul">
+                            <ul class="grid-ul box-inter">
                                 <li class="sub-grid-items">
                                     <span class="name-text">Taxes</span>
                                     <span class="num">03</span>
-                                    <span class="icon"></span>
+                                    <span class="icon icon-calculator"></span>
                                 </li>
                                 <li class="sub-grid-items">
                                     <span class="name-text">Portfolio</span>
                                     <span class="num">03</span>
-                                    <span class="icon"></span>
+                                    <span class="icon icon-briefcase"></span>
+                                </li>
+                                <li class="sub-grid-items">
+                                    <span class="name-text">Security</span>
+                                    <span class="num">03</span>
+                                    <span class="icon icon-lock"></span>
                                 </li>
                                 <li class="sub-grid-items">
                                     <span class="name-text">Education</span>
                                     <span class="num">03</span>
-                                    <span class="icon"></span>
+                                    <span class="icon icon-scolar"></span>
                                 </li>
                             </ul>
                         </div>
                     </section>
-                    <section>
+                    <section class="">
                         <h2 class="sub-grid-title">Download Our App</h2>
-                        <ul class="playstore-icon flex-box column alg-start" aria-labelledby="app download links">
+                        <ul class="playstore-icon flex-box column alg-start box-inter"
+                            aria-labelledby="app download links">
                             <li>
                                 <a href="#" aria-label="Download Android app">
                                     <span class="name-text icon-android">Download Android App</span>
@@ -250,12 +282,13 @@
                 </aside>
             </div>
             <div class="sub-section-last">
-                <h2>Latest News</h2>
+                <h2 class="arrow-dot">Latest News</h2>
                 <p>Keep informed and updated on all news related to your bank.</p>
                 <ul class="card-grid grid-ul">
                     <li>
-                        <article class="card">
-                            <h3 class="card-header">
+                        <article class="card box-inter">
+                            <h3 class="card-header flex-box start">
+                                <span class="icon icon-box"></span>
                                 Protection With You
                             </h3>
                             <figure class="card-image">
@@ -263,11 +296,12 @@
                                     alt="Three professionals reviewing financial documents together">
                             </figure>
                             <ul class="card-meta flex-box between">
-                                <li>By <span class="author">Informes</span></li>
-                                <li>
+                                <li class="flex-box"><span class="icon icon-user"></span> <span class="author">By
+                                        Informes</span></li>
+                                <li class="flex-box"><span class="icon icon-time"></span>
                                     <time datetime="2019-04-22">Apr 22, 2019</time>
                                 </li>
-                                <li>8234 Views</li>
+                                <li class="flex-box"><span class="icon icon-eye"></span>8234 Views</li>
                             </ul>
                             <p>
                                 Find all the support and information they need to make all decisions about saving for
@@ -276,46 +310,50 @@
                         </article>
                     </li>
                     <li>
-                        <article class="card">
-                            <h3 class="card-header">
-                                Protection With You
+                        <article class="card box-inter">
+                            <h3 class="card-header flex-box start">
+                                <span class="icon icon-shield"></span>
+                                For your future
                             </h3>
                             <figure class="card-image">
                                 <img src="./images/herobanner.jpg"
                                     alt="Three professionals reviewing financial documents together">
                             </figure>
                             <ul class="card-meta flex-box between">
-                                <li>By <span class="author">Informes</span></li>
-                                <li>
+                                <li class="flex-box"><span class="icon icon-user"></span> <span class="author">By
+                                        Informes</span></li>
+                                <li class="flex-box"><span class="icon icon-time"></span>
                                     <time datetime="2019-04-22">Apr 22, 2019</time>
                                 </li>
-                                <li>8234 Views</li>
+                                <li class="flex-box"><span class="icon icon-eye"></span>8234 Views</li>
                             </ul>
                             <p>
-                                Find all the support and information they need to make all decisions about saving for
-                                your future.
+                                Meet here all our range of products and services, rules of our products and everything
+                                related to your savings in pension.
                             </p>
                         </article>
                     </li>
                     <li>
-                        <article class="card">
-                            <h3 class="card-header">
-                                Protection With You
+                        <article class="card box-inter">
+                            <h3 class="card-header flex-box start">
+                                <span class="icon icon-shield"></span>
+                                Zone Saver
                             </h3>
                             <figure class="card-image">
                                 <img src="./images/herobanner.jpg"
                                     alt="Three professionals reviewing financial documents together">
                             </figure>
                             <ul class="card-meta flex-box between">
-                                <li>By <span class="author">Informes</span></li>
-                                <li>
+                                <li class="flex-box"><span class="icon icon-user"></span> <span class="author">By
+                                        Informes</span></li>
+                                <li class="flex-box"><span class="icon icon-time"></span>
                                     <time datetime="2019-04-22">Apr 22, 2019</time>
                                 </li>
-                                <li>8234 Views</li>
+                                <li class="flex-box"><span class="icon icon-eye"></span>8234 Views</li>
                             </ul>
                             <p>
-                                Find all the support and information they need to make all decisions about saving for
-                                your future.
+                                Accompany relevant share you mean, renewed and information of interest to learn to save
+                                you and your projects come true.
                             </p>
                         </article>
                     </li>
@@ -324,7 +362,9 @@
         </section>
     </main>
     <footer>
+        <p>© Coop Bank. All rights reserved. Your financial partner for life.</p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
