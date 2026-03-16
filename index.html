@@ -1,0 +1,330 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <a href="#main-menu" class="skip-link">Skip to main menu</a>
+    <header class="header flex-box between">
+        <a href="/" class="logo flex-box">
+            <img src="./images/coop_bank_icon_clean.png" alt="Coop Bank logo">
+            <p>
+                <span class="logoname" aria-describedby="logoname">Coop Bank</span>
+                <span aria-describedby="logotext">Your money is safe.</span>
+            </p>
+        </a>
+        <div class="menu ">
+            <span class="burger"></span>
+        </div>
+        <aside class="useraccess">
+            <div class="register-area flex-box between">
+                <a href="#" class="arrow-style-btn">
+                    Register Here
+                </a>
+                <p class="transaction-info">
+                    Make your online transactions here.
+                </p>
+            </div>
+            <form action="" method="" class="header-form flex-box between" aria-labelledby="login-heading">
+                <fieldset class="form-group">
+                    <label for="document-type"></label>
+                    <span class="icon-select">
+                        <select id="document-type" name="document-type">
+                            <option value="">Select document type</option>
+                            <option value="id">ID Card</option>
+                            <option value="passport">Passport</option>
+                            <option value="license">Driving License</option>
+                        </select>
+                    </span>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="document-number"></label>
+                    <input type="text" id="document-number" name="document-number" required>
+                </fieldset>
+                <button class="submit-btn" type="submit">
+                    Go
+                </button>
+            </form>
+        </aside>
+    </header>
+    <main>
+        <section class="section section-one full-width">
+            <nav class="main-nav">
+                <ul class="flex-box nav-ul between">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <!-- HTML <details> and <summary> tags provide a built-in accordion feature without JavaScript 	97.22% -->
+                        <details name="menu">
+                            <summary>Company</summary>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details name="menu">
+                            <summary>Gallery</summary>
+                            <ul>
+                                <li><a href="#">Photos</a></li>
+                                <li><a href="#">Videos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details name="menu">
+                            <summary>Our Services</summary>
+                            <ul>
+                                <li><a href="#">Loans</a></li>
+                                <li><a href="#">Savings</a></li>
+                                <li><a href="#">Online Banking</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details name="menu">
+                            <summary>Portfolio</summary>
+                            <ul>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Investments</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <details name="menu">
+                            <summary>Features Theme</summary>
+                            <ul>
+                                <li><a href="#">Theme Options</a></li>
+                                <li><a href="#">Layouts</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sub-section flex-box between" aria-labelledby="article-and-form">
+                <article class="flex-box between flex-70">
+                    <nav class="breadcrumb flex-box start" aria-label="Breadcrumb">
+                        <a href="#" class="arrow-style-btn ">
+                            <span class="icon home-icon"></span>
+                        </a>
+                        <p>Welcome to CoopBank</p>
+                    </nav>
+                    <div class="content figure flex-box" role="figure">
+                        <div class="hero-content flex-box column">
+                            <p class="hero-subtitle">YOUR SUCCESSFUL FUTURE IS OURS</p>
+                            <h1>ARE YOU READY?</h1>
+                            <p class="hero-text">
+                                Check Coopbank included multiple features
+                            </p>
+                            <div class="hero-actions flex-box">
+                                <a href="#" class="btn btn-yellow">
+                                    View more
+                                </a>
+                                <a href="#" class="btn btn-yellow">
+                                    View more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <aside class="credit-widget flex-box column alg-start flex-30">
+                    <header class="widget-header">
+                        <span class="tag active">Simulator</span>
+                        <span class="tag">Contact Us</span>
+                    </header>
+                    <form class="credit-form flex-box column alg-start">
+                        <div class="form-group flex-box column alg-start">
+                            <label for="credit-type">Credit type</label>
+                            <span class="icon-select">
+                                <select id="credit-type" name="credit-type">
+                                    <option value="">Select</option>
+                                    <option value="personal">Personal Loan</option>
+                                    <option value="home">Home Loan</option>
+                                    <option value="business">Business Loan</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="form-group flex-box column alg-start">
+                            <label for="value-request">Value request</label>
+                            <input type="text" id="value-request" name="value-request" placeholder="Enter value">
+                        </div>
+                        <div class="form-group flex-box column alg-start">
+                            <label for="term-months">Term in months</label>
+                            <span class="icon-select">
+                                <select id="term-months" name="term-months">
+                                    <option value="">Select</option>
+                                    <option value="12">12 months</option>
+                                    <option value="24">24 months</option>
+                                    <option value="36">36 months</option>
+                                </select>
+                            </span>
+                        </div>
+                        <button type="submit" class="consult-btn btn btn-yellow">
+                            Consult
+                        </button>
+                    </form>
+                </aside>
+            </div>
+            <div class="sub-section-grid flex-box between alg-start" aria-labelledby="grid-section">
+                <section aria-labelledby="services-heading" class="flex-70">
+                    <ul class="grid-ul">
+                        <li class="flex-box">
+                            <article class="grid-item-card">
+                                <h3>Loan Request</h3>
+                                <p>Helping to fulfill your dreams.</p>
+                                <a href="#" aria-label="View more about loan requests">View more</a>
+                            </article>
+                        </li>
+                        <li class="flex-box">
+                            <article class="grid-item-card">
+                                <h3>Loan Request</h3>
+                                <p>Helping to fulfill your dreams.</p>
+                                <a href="#" aria-label="View more about loan requests">View more</a>
+                            </article>
+                        </li>
+                        <li class="flex-box">
+                            <article class="grid-item-card">
+                                <h3>Loan Request</h3>
+                                <p>Helping to fulfill your dreams.</p>
+                                <a href="#" aria-label="View more about loan requests">View more</a>
+                            </article>
+                        </li>
+                        <li class="flex-box">
+                            <article class="grid-item-card">
+                                <h3>Loan Request</h3>
+                                <p>Helping to fulfill your dreams.</p>
+                                <a href="#" aria-label="View more about loan requests">View more</a>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <aside aria-labelledby="links-heading" class="start flex-30 flex-box  sub-grid-section">
+                    <section>
+                        <h2 class="sub-grid-title">Interesting Links</h2>
+                        <div aria-labelledby="sub grid list" class="sub-grid">
+                            <ul class="grid-ul">
+                                <li class="sub-grid-items">
+                                    <span class="name-text">Taxes</span>
+                                    <span class="num">03</span>
+                                    <span class="icon"></span>
+                                </li>
+                                <li class="sub-grid-items">
+                                    <span class="name-text">Portfolio</span>
+                                    <span class="num">03</span>
+                                    <span class="icon"></span>
+                                </li>
+                                <li class="sub-grid-items">
+                                    <span class="name-text">Education</span>
+                                    <span class="num">03</span>
+                                    <span class="icon"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="sub-grid-title">Download Our App</h2>
+                        <ul class="playstore-icon flex-box column alg-start" aria-labelledby="app download links">
+                            <li>
+                                <a href="#" aria-label="Download Android app">
+                                    <span class="name-text icon-android">Download Android App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Download Apple iOS app">
+                                    <span class="name-text icon-apple">Download Apple App</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+            <div class="sub-section-last">
+                <h2>Latest News</h2>
+                <p>Keep informed and updated on all news related to your bank.</p>
+                <ul class="card-grid grid-ul">
+                    <li>
+                        <article class="card">
+                            <h3 class="card-header">
+                                Protection With You
+                            </h3>
+                            <figure class="card-image">
+                                <img src="./images/herobanner.jpg"
+                                    alt="Three professionals reviewing financial documents together">
+                            </figure>
+                            <ul class="card-meta flex-box between">
+                                <li>By <span class="author">Informes</span></li>
+                                <li>
+                                    <time datetime="2019-04-22">Apr 22, 2019</time>
+                                </li>
+                                <li>8234 Views</li>
+                            </ul>
+                            <p>
+                                Find all the support and information they need to make all decisions about saving for
+                                your future.
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <h3 class="card-header">
+                                Protection With You
+                            </h3>
+                            <figure class="card-image">
+                                <img src="./images/herobanner.jpg"
+                                    alt="Three professionals reviewing financial documents together">
+                            </figure>
+                            <ul class="card-meta flex-box between">
+                                <li>By <span class="author">Informes</span></li>
+                                <li>
+                                    <time datetime="2019-04-22">Apr 22, 2019</time>
+                                </li>
+                                <li>8234 Views</li>
+                            </ul>
+                            <p>
+                                Find all the support and information they need to make all decisions about saving for
+                                your future.
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <h3 class="card-header">
+                                Protection With You
+                            </h3>
+                            <figure class="card-image">
+                                <img src="./images/herobanner.jpg"
+                                    alt="Three professionals reviewing financial documents together">
+                            </figure>
+                            <ul class="card-meta flex-box between">
+                                <li>By <span class="author">Informes</span></li>
+                                <li>
+                                    <time datetime="2019-04-22">Apr 22, 2019</time>
+                                </li>
+                                <li>8234 Views</li>
+                            </ul>
+                            <p>
+                                Find all the support and information they need to make all decisions about saving for
+                                your future.
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

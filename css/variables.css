@@ -1,0 +1,77 @@
+:root {
+  --max-width: 1920px;
+  --default-white: #FFFFFF;
+  --default-dark: #0D0D0D;
+  --primary: #d4e117;
+  --primary-100: #b4dc7c87;
+
+  --accent-dark:#26261a;
+
+  --secondary-600:#43443f;
+  --secondary-700:#f7f7f7;
+  --secondary-800:#e2e1e3;
+  --secondary--900:#262A2E;
+  --secondary-500:#f9f9f9;
+
+  --card-border:#CFD1D4;
+
+
+  --font-10: 0.625rem;
+  --font-12: 0.75rem;
+  --font-14: 0.875rem;
+  --font-18: 1.125rem;
+  --font-26: 1.625rem;
+  --font-32: 2rem; 
+  --font-56: 3.5rem;
+  --font-36: 2.25rem;
+  --font-48: 3rem;
+  --font-44:2.75rem;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../font/OpenSans_Condensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../font/OpenSans_Condensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../font/OpenSans_Condensed-Bold.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

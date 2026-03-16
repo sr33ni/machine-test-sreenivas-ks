@@ -1,0 +1,232 @@
+      .menu {
+          position: absolute;
+          z-index: 1;
+          right: 1rem;
+          top: 1rem;
+          height: 20px;
+          width: 28px;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+          .burger {
+              position: absolute;
+              right: 0;
+              top: 0.5rem;
+              width: 28px;
+              height: 3px;
+              background: var(--default-white);
+              transition: all 0.5s ease-in-out;
+              &::before {
+                  content: "";
+                  position: absolute;
+                  top: -8px;
+                  width: 28px;
+                  height: 3px;
+                  background: var(--default-white);
+                  transition: all 0.5s ease-in-out;
+              }
+              &::after {
+                  content: "";
+                  position: absolute;
+                  top: 8px;
+                  width: 20px;
+                  height: 3px;
+                  background: var(--default-white);
+                  transition: all 0.5s ease-in-out;
+              }
+              &.open {
+                  transform: rotate(720deg);
+                  background: transparent;
+                  &::before {
+                      transform: rotate(45deg) translate(5px, 8px);
+                  }
+                  &::after {
+                      width: 28px;
+                      transform: rotate(-45deg) translate(3px, -7px);
+                  }
+              }
+          }
+      }
+      :is(.section, .header) {
+          width: 100%;
+          max-width: var(--max-width);
+          margin: 0 auto;
+          img {
+              max-width: 100%;
+              height: auto;
+              display: block;
+          }
+      }
+      :is(.sub-section, .sub-section-grid, .sub-section-last) {
+          padding: 1rem;
+          gap: 3rem;
+      }
+      :is(.sub-section-grid, .sub-section-last) {
+          .grid-ul {
+              grid-template-columns: repeat(1, 1fr);
+          }
+      }
+      :is(.flex-30, .flex-70) {
+          max-width: 100%;
+          width: 100%;
+      }
+      .main-nav {
+          >.nav-ul {
+              padding: 1rem 1rem;
+          }
+      }
+      .flex-box {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-flow: column wrap;
+          text-align: left;
+          &.between {
+              justify-content: space-between;
+          }
+          .flex-full {
+              flex: 1 1 100%;
+          }
+          .flex-half {
+              flex: 1 1 100%;
+          }
+          &.start {
+              justify-content: flex-start;
+          }
+          &.end {
+              justify-content: flex-end;
+          }
+          &.alg-end {
+              align-items: flex-end;
+          }
+          &.alg-start {
+              align-items: flex-start;
+          }
+          &.nowrap {
+              flex-flow: row nowrap;
+          }
+          &.column {
+              flex-direction: column;
+          }
+      }
+      .menu {
+          &.open {
+              +.useraccess {
+                  right: 0;
+              }
+          }
+      }
+      .useraccess {
+          position: fixed;
+          z-index: 99;
+          top: 45px;
+          width: 100%;
+          right: -100%;
+          bottom: 0;
+          background: var(--default-dark);
+          .header-form {
+              align-items: flex-end;
+              padding: 1rem;
+              .form-group {
+                  width: 100%;
+                  :is(input, select) {
+                      width: 100%;
+                  }
+              }
+          }
+      }
+      .register-area {
+          background-color: var(--secondary-600);
+          font-size: var(--font-14);
+          font-weight: 700;
+          padding: 1rem;
+          gap: 1rem;
+          p {
+              margin: 0;
+              color: var(--default-white);
+          }
+      }
+      @media (min-width: 800px) {
+          .flex-box {
+              flex-direction: row;
+              .flex-half {
+                  max-width: calc(50% - 50px);
+              }
+          }
+          :is(.sub-section-grid, .sub-section-last) {
+              .grid-ul {
+                  grid-template-columns: repeat(2, 1fr);
+              }
+          }
+          .menu {
+              display: none;
+          }
+          .useraccess {
+              position: static;
+              background-color: transparent;
+              width: auto;
+              .header-form {
+                  padding: 1rem 2.5rem;
+                  .form-group {
+                      width: fit-content;
+                      :is(input, select) {
+                          width: fit-content;
+                      }
+                  }
+              }
+          }
+          .figure {
+              .hero-content {
+                  max-width: 65%;
+                  padding: 0;
+                  text-align: center;
+                  .hero-text {
+                      text-align: center;
+                  }
+              }
+          }
+      }
+      @media (min-width: 1080px) {
+          .flex-70 {
+              max-width: calc(70% - 1.5rem);
+              width: 100%;
+          }
+          .flex-30 {
+              max-width: calc(30% - 1.5rem);
+              width: 100%;
+          }
+          :is(.sub-section, .sub-section-grid, .sub-section-last) {
+              padding: 2rem 5rem;
+          }
+          :is(.sub-section-grid, .sub-section-last) {
+              .grid-ul {
+                  grid-template-columns: repeat(3, 1fr);
+              }
+          }
+          .main-nav {
+              >.nav-ul {
+                  padding: 0 5rem;
+              }
+          }
+          .flex-box {
+              align-items: center;
+          }
+          .main-nav {
+              >.nav-ul {
+                  details {
+                      ul {
+                          position: absolute;
+                          background-color: var(--secondary-600);
+                          padding: 10px;
+                          z-index: 9;
+                      }
+                  }
+              }
+          }
+          .register-area {
+              padding: 0;
+              padding-right: 1rem;
+          }
+      }
+      @media (min-width: 1200px) {}
+      @media (min-width: 1440px) {}
+      @media (min-width: 1600px) {}
