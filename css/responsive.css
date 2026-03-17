@@ -228,6 +228,7 @@
               right: 0;
               bottom: unset;
               background-color: var(--fixed-bar);
+              z-index: 999;
           }
           .figure {
               .hero-content {
