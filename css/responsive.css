@@ -88,7 +88,8 @@
               top: unset;
               z-index: 100;
               &.open {
-                  right: 0;
+                  right: 100px;
+                  width: calc(100% - 100px);
               }
           }
           >.search-ul {
@@ -171,6 +172,15 @@
               color: var(--default-white);
           }
       }
+      .main-nav {
+            & > .nav-ul {
+                & details {
+                    summary {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
       @media (min-width: 800px) {
           .header {
               padding-inline: 3rem;
@@ -273,3 +283,15 @@
       @media (min-width: 1200px) {}
       @media (min-width: 1440px) {}
       @media (min-width: 1600px) {}
+@media (max-height: 700px) {
+  .main-nav {
+    & > .nav-ul {
+        & details {
+            summary {
+ 
+                padding: 5px;
+            }
+        }
+    }
+}
+}
